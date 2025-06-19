@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    color: #EBEBEB;
+    font-size: 1.65rem;
+    font-family: Georgia, serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 10px;
+}
+::selection {
+    background-color: transparent;
+}
+
+#comicPage {
+    width: 720px;
+}
+#ui-dialogueBox {
+    position: relative;
+    width: 720px;
+}
+#dialogueBox {
+    display: block;
+    width: 100%;
+}
+#ui-diaTxt {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    right: 100px;
+    bottom: 20px;
+
+    gap: 5px;
+    
+    padding: 0.5rem;
+    box-sizing: border-box;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#diaText {
+    word-break: break-word;
+    cursor: pointer;
+}
+#diaName {
+    cursor: default;
+}
